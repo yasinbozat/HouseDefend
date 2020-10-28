@@ -10,8 +10,15 @@ public class ZombieAttackTrigger : MonoBehaviour
     {
         if (other.tag == "Zombie")
         {            
+<<<<<<< Updated upstream
            other.gameObject.GetComponent<Animator>().SetInteger("Anim", -1);
            houseHealt.GetHouseDamage(ZombieMovement.damage);
         }        
     } 
+=======
+           other.gameObject.GetComponent<Animator>().SetInteger("Anim", -1);           
+           // 
+        }
+    }
+>>>>>>> Stashed changes
 }

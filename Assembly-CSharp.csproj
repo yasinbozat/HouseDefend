@@ -71,6 +71,12 @@
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
+<<<<<<< Updated upstream
+=======
+    <Compile Include="Assets\ZombieDamage.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\Bullet.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\HouseHealt.cs" />
+>>>>>>> Stashed changes
     <Compile Include="Assets\_HouseDefend\Scripts\SoldierAnimControler.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieAttackTrigger.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieHealthBar.cs" />
