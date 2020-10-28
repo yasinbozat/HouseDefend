@@ -16,12 +16,12 @@ public class ZombieSpawner : MonoBehaviour
     IEnumerator Spawn()
     {
         if (i < 4)
-        { 
-        yield return new WaitForSeconds(SpawnZombieTime);
-        zombieAddList = Instantiate(zombie[Random.Range(0, zombie.Count)], new Vector3(Random.Range(4.5f,7f), -2.22f, 33f), Quaternion.Euler(0,180,0));
-        StartCoroutine(Spawn());
-        zombieList.Add(zombieAddList);
-        i++;
+        {
+            yield return new WaitForSeconds(SpawnZombieTime);
+            zombieAddList = Instantiate(zombie[Random.Range(0, zombie.Count)], new Vector3(Random.Range(4.5f, 7f), -2.22f, 33f), Quaternion.Euler(0, 180, 0));
+            StartCoroutine(Spawn());
+            zombieList.Add(zombieAddList);
+            i++;
         }
     }
 }

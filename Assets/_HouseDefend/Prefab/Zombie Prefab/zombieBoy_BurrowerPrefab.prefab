@@ -1641,6 +1641,7 @@ GameObject:
   - component: {fileID: 3882179698037525316}
   - component: {fileID: 3882179698037525319}
   - component: {fileID: 3882179698037525318}
+  - component: {fileID: -3366388690787564656}
   m_Layer: 0
   m_Name: zombieBoy_BurrowerPrefab
   m_TagString: Zombie
@@ -1756,6 +1757,20 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-3366388690787564656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882179698037525337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13590a5d1c0ec8249abc3ce0bee0efdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  houseHealt: {fileID: 0}
+  SoldierAnimControler: {fileID: 0}
 --- !u!1 &3882179698110821630
 GameObject:
   m_ObjectHideFlags: 0
