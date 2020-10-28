@@ -5,10 +5,10 @@ using UnityEngine.UI;
 
 public class ZombieHealthBar : MonoBehaviour
 {
-    public static float health = 1f;
+    public static float health=1f;
     void Start()
     {
-
+        
     }
     /*private void FixedUpdate()
     {
