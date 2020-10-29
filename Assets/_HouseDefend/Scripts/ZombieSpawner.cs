@@ -8,6 +8,8 @@ public class ZombieSpawner : MonoBehaviour
     public static List<GameObject> zombieList = new List<GameObject>();
     public static GameObject zombieAddList;
     public static float SpawnZombieTime = 2f;
+    public int zombieCount;
+
     int i;
     private void Start()
     {
@@ -15,7 +17,7 @@ public class ZombieSpawner : MonoBehaviour
     }
     IEnumerator Spawn()
     {
-        if (i < 4)
+        if (i < zombieCount)
         { 
         yield return new WaitForSeconds(SpawnZombieTime);
         zombieAddList = Instantiate(zombie[Random.Range(0, zombie.Count)], new Vector3(Random.Range(4.5f,7f), -2.22f, 33f), Quaternion.Euler(0,180,0));
