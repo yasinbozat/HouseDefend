@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Zombie
   - ZombieAttackTrigger
+  - HP
   layers:
   - Default
   - TransparentFX

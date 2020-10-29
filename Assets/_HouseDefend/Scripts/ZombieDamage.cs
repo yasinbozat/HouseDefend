@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class ZombieDamage : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class ZombieDamage : MonoBehaviour
     public GameObject HouseHealt;
     public int AttackDamage;
     float setDamage;
+    public Text hpText;
     private void Start()
     {
         HouseHealt = GameObject.Find("Health");

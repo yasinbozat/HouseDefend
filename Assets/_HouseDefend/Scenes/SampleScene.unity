@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.13060617, g: 0.09482125, b: 0.12541717, a: 1}
+  m_IndirectSpecularColor: {r: 0.13060763, g: 0.09482264, b: 0.12541854, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -388,8 +388,8 @@ GameObject:
   - component: {fileID: 122285115}
   - component: {fileID: 122285114}
   m_Layer: 0
-  m_Name: ScoreText
-  m_TagString: Untagged
+  m_Name: HealthPoint
+  m_TagString: HP
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -464,12 +464,12 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 98c52d2e072058f4786fb53690347b78,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.92
+      value: -8.9442
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c52d2e072058f4786fb53690347b78,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0
+      value: 0.000001899
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 98c52d2e072058f4786fb53690347b78,
         type: 3}
@@ -1027,7 +1027,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5be9215a12c8b3c44b68cf7ff37540c0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.224
+      value: -2.208
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 5be9215a12c8b3c44b68cf7ff37540c0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2318,6 +2318,7 @@ GameObject:
   - component: {fileID: 1471544142}
   - component: {fileID: 1471544141}
   - component: {fileID: 1471544140}
+  - component: {fileID: 1471544143}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2390,6 +2391,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 10, y: -90, z: 0}
+--- !u!114 &1471544143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1471544139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 084e646d4dd0865479fab2e8accd93d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1480495089
 GameObject:
   m_ObjectHideFlags: 0
@@ -4312,9 +4325,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 617928ba6b78db34588eb3f11bef25f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthPoint: 100
+  healthPoint: 300
   currentHealthPoint: 0
   hp: 0
+  hpText: {fileID: 122285114}
 --- !u!4 &7119186325128399059
 Transform:
   m_ObjectHideFlags: 0
@@ -4391,15 +4405,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7979070481679465075, guid: 685501023999f054fae23af99c777284,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.9
+      objectReference: {fileID: 0}
     - target: {fileID: 7979070481928415202, guid: 685501023999f054fae23af99c777284,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 29.974
+      value: 29.874
       objectReference: {fileID: 0}
     - target: {fileID: 7979070482251055747, guid: 685501023999f054fae23af99c777284,
         type: 3}
       propertyPath: m_LocalPosition.x
       value: -4.882
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979070482251055747, guid: 685501023999f054fae23af99c777284,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.848
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979070482671306776, guid: 685501023999f054fae23af99c777284,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.882
+      objectReference: {fileID: 0}
+    - target: {fileID: 7979070483398107070, guid: 685501023999f054fae23af99c777284,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 29.882
       objectReference: {fileID: 0}
     - target: {fileID: 9040298783137706781, guid: 685501023999f054fae23af99c777284,
         type: 3}
