@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{63FFF097-805E-6C8E-452F-AB6CDE74F35F}</ProjectGuid>
+    <ProjectGuid>{E35D36D5-DB4A-7823-52E4-C5C86C22C854}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -63,21 +63,25 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Bullet.cs" />
-    <Compile Include="Assets\HouseHealt.cs" />
-    <Compile Include="Assets\SoldierAttackTrigger.cs" />
-    <Compile Include="Assets\TargetZombie.cs" />
+    <Compile Include="Assets\AllSkyFree\AllSkyFree_Menu.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\Actions.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterPanel.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\CharacterViewer.cs" />
     <Compile Include="Assets\Yurowm\Demo\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\Bullet.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\HouseHealt.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\SoldierAnimControler.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\SoldierAttackTrigger.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\TargetZombie.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieAttackTrigger.cs" />
+    <Compile Include="Assets\_HouseDefend\Scripts\ZombieDamage.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieHealthBar.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieMovement.cs" />
     <Compile Include="Assets\_HouseDefend\Scripts\ZombieSpawner.cs" />
+    <None Include="Assets\Barrels\StandardDoubleSided.shader" />
     <None Include="Assets\CartoonZombies\readme.txt" />
     <None Include="Assets\Yurowm\Shaders\SkinShader.shader" />
+    <None Include="Assets\AllSkyFree\AllSkyFree_Readme.txt" />
     <None Include="Assets\Models3D\Props\Ammunition\ReadMe.txt" />
     <None Include="Assets\old car\License.txt" />
     <Reference Include="UnityEngine">
@@ -264,7 +268,7 @@
       <HintPath>E:/unity/2019.4.12f1/Editor/Data/Managed/UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Assets/Plugins/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>E:/unity/2019.4.12f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -612,36 +616,36 @@
       <HintPath>E:/unity/2019.4.12f1/Editor/Data/NetStandard/compat/2.0.0/shims/netfx/System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.CollabProxy.Editor">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-      <HintPath>C:/Users/Fatih/Desktop/Defend Castle 3D/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+      <HintPath>C:/Users/Fatih/Desktop/HouseDefend/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{38C9FFC4-DD67-1211-FEE3-B97E6880498D}</Project>
+      <Project>{C5166447-5411-C370-5108-61760B8BA46D}</Project>
       <Name>Assembly-CSharp-firstpass</Name>
     </ProjectReference>
   </ItemGroup>
