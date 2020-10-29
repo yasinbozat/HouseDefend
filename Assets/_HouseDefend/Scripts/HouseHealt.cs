@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class HouseHealt : MonoBehaviour
 {
+    static int HealthPoint;
+
     public void SetHouseDamage(float Damage)
     {
         transform.localScale -= new Vector3(0, 0, Damage);
