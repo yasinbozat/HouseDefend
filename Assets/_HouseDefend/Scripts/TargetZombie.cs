@@ -1,25 +1,27 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class TargetZombie : MonoBehaviour
 {
     public static List<GameObject> bots = new List<GameObject>();
-    float[] botsPosZ = new float[10];
+    float[] botsPosZ = new float[20];
     float backUp;
     GameObject backUpBot;
     void FixedUpdate()
     {
-        for(int i = 0; i<ZombieSpawner.zombieList.Count;i++)
-        {
-            bots = ZombieSpawner.zombieList;
-        }
+        bots = ZombieSpawner.zombieList;
        
         for (int i = 0; i < bots.Count; i++)
         {
-            if (bots[i])
+            if(bots[i])
             {
                 botsPosZ[i] = bots[i].transform.position.z;
+            }
+            else
+            {
+                bots[i].transform.DOKill();
             }
         }
         for (int i = 0; i < bots.Count; i++)
