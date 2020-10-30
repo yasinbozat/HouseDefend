@@ -17,7 +17,7 @@ public class HouseHealt : MonoBehaviour
         Time.timeScale = 3f;
         currentHealthPoint = healthPoint;
         hp = currentHealthPoint / healthPoint;
-        transform.localScale = new Vector3(1, 1, hp);
+        transform.localScale = new Vector3(hp, 1, 1);
         hpText.text = currentHealthPoint.ToString();
     }
     public void SetHouseDamage(float Damage)
@@ -31,7 +31,7 @@ public class HouseHealt : MonoBehaviour
         {
             currentHealthPoint -= Damage;
             hp = currentHealthPoint / healthPoint;
-            transform.localScale = new Vector3(1, 1, hp);
+            transform.localScale = new Vector3(hp, 1, 1);
             hpText.text = currentHealthPoint.ToString();
         }
         else
@@ -43,7 +43,7 @@ public class HouseHealt : MonoBehaviour
     {
         currentHealthPoint += Health;
         hp = currentHealthPoint / healthPoint;
-        transform.localScale = new Vector3(1, 1, hp);
+        transform.localScale = new Vector3(hp, 1, 1);
         hpText.text = currentHealthPoint.ToString();
     }
 }
