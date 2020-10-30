@@ -1643,6 +1643,7 @@ GameObject:
   - component: {fileID: 8326437832806838998}
   - component: {fileID: 3882179698037525319}
   - component: {fileID: 8688701224319679224}
+  - component: {fileID: -6986228219597706820}
   m_Layer: 0
   m_Name: zombieBoy_BurrowerPrefab
   m_TagString: Zombie
@@ -1790,6 +1791,19 @@ MonoBehaviour:
   HouseHealt: {fileID: 0}
   AttackDamage: 3
   hpText: {fileID: 0}
+--- !u!114 &-6986228219597706820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3882179698037525337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 878b174e6d8a8cf42b8f6defd95ae82e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zombieGold: 50
 --- !u!1 &3882179698110821630
 GameObject:
   m_ObjectHideFlags: 0

@@ -9,12 +9,16 @@ public class SoldierAnimControler : MonoBehaviour
     public bool isThereZombie = false;
     public GameObject bullet;
     GameObject bullet2;
+   
     public static float Damage = 0.05f;
     public static float SoldierFireTime = 1f;
     int target;
+    int earnGold;
+    public GameObject player;
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.Find("Player");
         actions.Aiming();
         InvokeRepeating("IsThereZombie",0, SoldierFireTime);
     }
@@ -28,8 +32,11 @@ public class SoldierAnimControler : MonoBehaviour
             BulletSpawn();
             if (TargetZombie.bots[target].GetComponentInChildren<ZombieHealthBar>().transform.localScale.z<=0)
             {
-                TargetZombie.bots[target].SetActive(false);
-                target++;                
+                //TargetZombie.bots[target].SetActive(false);
+                target++;
+                //earnGold = TargetZombie.bots[target].GetComponent<ZombiePreferences>().zombieGold;
+                //player.GetComponent<Player>().SetGold(earnGold);
+                           
             }
             isThereZombie = false;
         }
